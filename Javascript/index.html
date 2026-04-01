@@ -37,6 +37,23 @@
 
 
         console.log(`Your final discount is ${age<=5?100:gender === 'female'?50:age<=8?50:age>=65?30:0}`)
+
+        function calculateDiscount(age,gender){
+          if (age<=5){
+            return 100; 
+          }else if (gender === 'female'){
+            return 50;
+          }else if (age<=8){
+            return 50;
+          }else if (age>=65){
+            return 30;
+          }else{
+            return 0;
+          }
+        }
+
+        console.log(`Your final discount is ${calculateDiscount(45, 'female')}`)
+
       </script>
 
 </body>
